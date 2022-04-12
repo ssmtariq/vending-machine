@@ -1,0 +1,10 @@
+{
+  "order-beverage-service": {
+    "addr": "order-beverage-service",
+    "port": 9090
+  },
+  "weather-service": {
+    "addr": "weather-service",
+    "port": 9091
+  }
+}
