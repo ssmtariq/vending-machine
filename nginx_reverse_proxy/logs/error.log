@@ -1,0 +1,66 @@
+0
+2021/02/13 02:45:37 [error] 217621#0: send() failed (111: Connection refused) while resolving, resolver: 127.0.0.1:53
+2021/02/13 02:45:37 [error] 217621#0: send() failed (111: Connection refused) while resolving, resolver: [::1]:5353
+2021/02/13 02:45:42 [error] 217621#0: send() failed (111: Connection refused) while resolving, resolver: 127.0.0.1:53
+2021/02/13 02:45:47 [error] 217621#0: send() failed (111: Connection refused) while resolving, resolver: [::1]:5353
+2021/02/13 02:45:52 [error] 217621#0: send() failed (111: Connection refused) while resolving, resolver: 127.0.0.1:53
+2021/02/13 02:45:57 [error] 217621#0: send() failed (111: Connection refused) while resolving, resolver: [::1]:5353
+2021/02/13 02:46:02 [error] 217621#0: send() failed (111: Connection refused) while resolving, resolver: 127.0.0.1:53
+2021/02/13 02:46:07 [error] 217621#0: *1 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to order-beverage-service:9090 (order-beverage-service could not be resolved (110: Operation timed out))
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:87: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:30: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	...reverse_proxy//lua-scripts/api/beverageservice/order.lua:9: in function 'Order'
+	content_by_lua(nginx.conf:39):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "127.0.0.1:8080"
+2021/02/13 02:56:02 [error] 217572#0: recv() failed (111: Connection refused) while resolving, resolver: 127.0.0.11:53
+2021/02/13 02:56:07 [error] 217572#0: recv() failed (111: Connection refused) while resolving, resolver: 127.0.0.11:53
+2021/02/13 02:56:12 [error] 217572#0: recv() failed (111: Connection refused) while resolving, resolver: 127.0.0.11:53
+2021/02/13 02:56:17 [error] 217572#0: recv() failed (111: Connection refused) while resolving, resolver: 127.0.0.11:53
+2021/02/13 02:56:22 [error] 217572#0: recv() failed (111: Connection refused) while resolving, resolver: 127.0.0.11:53
+2021/02/13 02:56:27 [error] 217572#0: recv() failed (111: Connection refused) while resolving, resolver: 127.0.0.11:53
+2021/02/13 02:56:32 [error] 217572#0: *3 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to order-beverage-service:9090 (order-beverage-service could not be resolved (110: Operation timed out))
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:87: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:30: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	...reverse_proxy//lua-scripts/api/beverageservice/order.lua:9: in function 'Order'
+	content_by_lua(nginx.conf:38):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "127.0.0.1:8080"
+2021/02/13 02:58:09 [notice] 217941#0: signal process started
+2021/02/13 03:08:36 [error] 217588#0: send() failed (111: Connection refused) while resolving, resolver: 127.0.0.1:53
+2021/02/13 03:08:36 [error] 217588#0: send() failed (111: Connection refused) while resolving, resolver: [::1]:5353
+2021/02/13 03:08:41 [error] 217588#0: send() failed (111: Connection refused) while resolving, resolver: 127.0.0.1:53
+2021/02/13 03:08:46 [error] 217588#0: send() failed (111: Connection refused) while resolving, resolver: [::1]:5353
+2021/02/13 03:08:51 [error] 217588#0: send() failed (111: Connection refused) while resolving, resolver: 127.0.0.1:53
+2021/02/13 03:08:56 [error] 217588#0: send() failed (111: Connection refused) while resolving, resolver: [::1]:5353
+2021/02/13 03:09:01 [error] 217588#0: send() failed (111: Connection refused) while resolving, resolver: 127.0.0.1:53
+2021/02/13 03:09:06 [error] 217588#0: *1 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to order-beverage-service:9090 (order-beverage-service could not be resolved (110: Operation timed out))
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:87: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:30: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	...reverse_proxy//lua-scripts/api/beverageservice/order.lua:9: in function 'Order'
+	content_by_lua(nginx.conf:39):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "127.0.0.1:8080"
+2021/02/13 04:51:33 [notice] 224258#0: signal process started
+2021/02/13 04:51:35 [notice] 224259#0: signal process started
+2021/02/13 04:51:35 [error] 224259#0: open() "/home/ubuntu/test/VendingMachine/nginx_reverse_proxy/logs/nginx.pid" failed (2: No such file or directory)
+2021/02/13 04:56:50 [alert] 219177#0: unlink() "/home/ubuntu/test/VendingMachine/nginx_reverse_proxy/logs/nginx.pid" failed (2: No such file or directory)
+2021/02/13 04:57:15 [alert] 217938#0: unlink() "/home/ubuntu/test/VendingMachine/nginx_reverse_proxy/logs/nginx.pid" failed (2: No such file or directory)
+2021/02/13 04:57:15 [alert] 217570#0: unlink() "/home/ubuntu/test/VendingMachine/nginx_reverse_proxy/logs/nginx.pid" failed (2: No such file or directory)
+2021/02/13 04:57:15 [alert] 217620#0: unlink() "/home/ubuntu/test/VendingMachine/nginx_reverse_proxy/logs/nginx.pid" failed (2: No such file or directory)
+2021/02/13 04:57:15 [alert] 217587#0: unlink() "/home/ubuntu/test/VendingMachine/nginx_reverse_proxy/logs/nginx.pid" failed (2: No such file or directory)
+2021/02/13 04:57:15 [alert] 217594#0: unlink() "/home/ubuntu/test/VendingMachine/nginx_reverse_proxy/logs/nginx.pid" failed (2: No such file or directory)
+2021/02/13 04:58:43 [alert] 216454#0: unlink() "/home/ubuntu/test/VendingMachine/nginx_reverse_proxy/logs/nginx.pid" failed (2: No such file or directory)
+2021/02/13 04:58:43 [alert] 216516#0: unlink() "/home/ubuntu/test/VendingMachine/nginx_reverse_proxy/logs/nginx.pid" failed (2: No such file or directory)
