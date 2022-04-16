@@ -3,6 +3,7 @@ add_executable(
     OrderBeverageService.cpp
     ${THRIFT_GEN_CPP_DIR}/OrderBeverageService.cpp
     ${THRIFT_GEN_CPP_DIR}/WeatherService.cpp
+	${THRIFT_GEN_CPP_DIR}/BeveragePreferenceService.cpp
     ${THRIFT_GEN_CPP_DIR}/vending_machine_types.cpp
 )
 

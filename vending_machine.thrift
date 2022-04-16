@@ -19,8 +19,6 @@ exception ServiceException {
     2: string message;
 }
 
-
-
 struct location{
 	1: i64 location_id;
 	2: i64 city;
@@ -36,21 +34,21 @@ enum BeverageType{
 	COLD
 }
 
+
+
 service OrderBeverageService{
 	string PlaceOrder(
 		1: i64 city
 	)throws (1: ServiceException se)
 }
 
-service UpdateWeatherService{
-	void UpdateWeather(
-		1: i64 city,
-		2: WeatherType w
-	)
-}
-
 service WeatherService{
 	WeatherType GetWeather(
 		1: i64 city
 	)
+}
+service BeveragePreferenceService{
+        string getBeverage(
+                1: BeverageType btype
+        )
 }
